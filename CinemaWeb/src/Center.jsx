@@ -1,15 +1,15 @@
-import Card from "./components/Cards";
+import Card from "./components/Card";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
 export default function Center() {
 
     const peliculas = [
         
-        {
+       {
             titulo: "TheMarvels",
             estado: "Estreno",
             imagen: "themarvels.jpg",
-           
+          
         },
         {
             titulo: "Trolls 3",
@@ -60,8 +60,8 @@ export default function Center() {
         <section>
         <div className="peliculas_foto">
             {peliculas.map((pelicula, index)=>(
-                  <Link to={"/aña"}>
-                    <Card  key = {index} imagen={pelicula.imagen} titulo={pelicula.titulo} estado={pelicula.estado} ></Card>
+                  <Link to={"/descripcion_trolls"}  key = {index}>
+                    <Card   imagen={pelicula.imagen} titulo={pelicula.titulo} estado={pelicula.estado} ></Card>
                   </Link>
                 
             
