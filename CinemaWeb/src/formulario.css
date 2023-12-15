@@ -89,3 +89,12 @@ font-size: 3rem;
         width: 90%;
     }
 }
+@media screen and (min-width:768px) {
+    .formulario_inicio{
+        width: 90%;
+        
+    }
+    .formulario_inicio1{
+        width: 90%;
+    }
+}

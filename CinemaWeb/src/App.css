@@ -2,24 +2,12 @@
 .titulo_app{
   font-size: 50px;
 }
-body{
-  background-image: url(fondonegroCinema.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  
-}
+
 
 .hamburguesa_icono{
   display: none;
   cursor: pointer;
 }
-
-.promo{
-  background-color: white;
-}
-
 .navegacion_principal{
   color: black;
   text-decoration: none;
@@ -34,7 +22,6 @@ font-weight: 700;
 .navegacion_principal:hover{
   background-color: #fee440;
   color: rgb(58, 60, 61);
-  
 }
 .navegacionn .navegacion_principal:hover{
  transition: all 900ms;
@@ -114,7 +101,7 @@ background-color: #708d81;
 padding-top: 20px;
 border-radius: 5px;
 margin: 20px;
-box-shadow: 0px 4px 40px 5px gray; 
+box-shadow: 0px 4px 40px 5px rgb(106, 106, 106); 
 }
 
 article:hover{
@@ -150,7 +137,9 @@ border-radius: 5px;
   text-align: center;
   color: white;
 }
-
+.textoEnfoto{
+  text-decoration: none;
+}
 .peliculas_central_foto p{
   background-color: rgb(131, 98, 98);
 }
@@ -177,8 +166,6 @@ border-radius: 5px;
     display: flex;
     font-size: 20px;
    margin-right: 70px;
-
-
   }
   .navegacion2{
     border-radius: 10px;
@@ -231,4 +218,76 @@ border-radius: 5px;
     transition: 300ms;
     transform: scale(1.1);
   }
+  
+
+}
+@media screen and (min-width:768px) {
+  .navegacion_principal{
+    display: none;
+  }
+
+  .peliculas_foto{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-evenly;
+}
+.hamburguesa_icono{
+  display: block;
+  margin-right: 20px;
+  font-size: 30px;
+  color: white;
+  justify-content: flex-end;
+}
+.navegacion2{
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #001427;
+  top: 60px;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+  gap: 15px;
+  margin: auto;
+  border: 2px solid #bbb;
+  z-index: 20;
+}
+.navegacion2 .navegacion_principal1{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  transition: 300ms all;
+  background-color: #073158;
+  font-weight: bold;
+}
+.navegacion2 .navegacion_principal1:hover{
+  transform: scale(1.1);
+  background-color: #0f375c;
+  border-radius: 5px;
+}
+.texto_final_parrafo3{
+  display: none;
+}
+}
+@media screen and (min-width: 1100px) {
+  .peliculas_foto{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-content: space-evenly;
+}
+.hamburguesa_icono{
+  display: none;
+}
+.navegacion_principal{
+  display: inline;
+}
+.texto_final_parrafo3{
+  display:inline;
+}
 }

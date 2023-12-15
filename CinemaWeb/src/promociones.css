@@ -1,0 +1,68 @@
+.promocion{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.precio_general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.boton_general{
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+}
+.precio_general h3{
+margin-top: 8px;
+}
+.cantidad{
+    margin-top: 5px;
+}
+.precio_general_texto{
+    margin-top: 15px;
+    margin-left: 50px;
+    border: solid 5px black;
+    height: 30px;
+    width: 100px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.codigo{
+    margin-left: 20px;
+}
+.codigo label{
+    font-weight: 600;
+    font-size: 20px;
+}
+.monto_final{
+    background-color: rgb(249, 240, 62);
+    padding-bottom: 50px;
+}
+.monto_final h1{
+    text-align: center;
+}
+.division-precio-codigo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+.promocion{
+    width: 100%;
+    
+}
+.division-precio-codigo{
+    display: flex;
+    flex-direction: column;
+}
+
+}

@@ -11,7 +11,7 @@ export default function Hider() {
         setAbrir(!abrir)
         
     }
-    function hamburguesa1() {
+    function hamburguesa() {
         setAbrir(!abrir)
     }
     const [abrir,setAbrir]= useState (false)
@@ -24,7 +24,7 @@ export default function Hider() {
                 ? <div className="navegacion2">
                     <Link className="navegacion_principal1" to={"/"} >Peliculas</Link>
                     <Link className="navegacion_principal1" to={"/Candy"}>Candy Store</Link>
-                    <Link className="navegacion_principal1" >Promociones</Link>
+                    <Link className="navegacion_principal1" to={"/promociones"} >Promociones</Link>
                 </div>
                 :""
                 }

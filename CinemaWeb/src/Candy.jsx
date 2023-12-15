@@ -2,31 +2,36 @@ import CardCandy from "./components/CardCandy";
 export default function Candy() {
     const Combos = [
         {
-            titulo1: "sasas",
-            estado1: "Estreno1",
+            titulo1: "Combo Mundial",
+            estado1: "10000$",
             imagen1: "comboseleccion.jpg",
           
         },
         {
-            titulo1: "Trolls 31",
-            estado1: "Estreno",
+            titulo1: "FNAF Combo",
+            estado1: "15000$",
             imagen1: "fnafcombo.jpg",
         },
         {
-            titulo1: "Five Night At Freddy1",
-            estado1: "Estreno1",
+            titulo1: "Combo Trolls",
+            estado1: "9500",
             imagen1: "trollscombo.jpg",
         },
         {
-            titulo1: "The Amazing Spider Man 31",
-            estado1: "Estreno1",
+            titulo1: "Gaseosa + Pochoclo + Pancho",
+            estado1: "6000$",
             imagen1: "combocompleto.jpg",
         },
         {
-            titulo1: "Megamente 21",
-            estado1: "Proximamente1",
+            titulo1: "Pochoclo Grande + Pochoclo chico",
+            estado1: "4000$",
             imagen1: "pochoclocombo.jpg",
         },
+        {
+            titulo1: "Combo Mario",
+            estado1: "7500$",
+            imagen1: "mariocombo.jpg",
+        }
     ]
     return(
         <>

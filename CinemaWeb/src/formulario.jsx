@@ -25,9 +25,9 @@ export default function Formulario() {
         <label htmlFor="">
          Contraseña
         </label>
-        <input type="text" placeholder="contraseña"/>
+        <input type="password" minLength={8} maxLength={12} placeholder="contraseña"/>
         </div>
-
+         
         <div className='formulario_inicio_botones'>
                 <button><a href="http://localhost:5173/" onClick={Notificacion_inicio1}>Cancelar</a></button>  
                 <button><a href="http://localhost:5173/" onClick={Notificacion_inicio2}>Confirmar</a></button>
